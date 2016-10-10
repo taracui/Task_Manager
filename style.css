@@ -1,0 +1,39 @@
+h1 {
+	font-size: 14px;
+}
+
+th {
+	text-align: left;
+}
+
+#textbox {
+	
+	float: left;
+}
+
+#addTask {
+	float: right;
+}
+
+#taskContainer{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#myTable{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#removeTask{
+	float: right;
+}
+
+.strikethrough:checked + span{
+	text-decoration: line-through;
+	color: green;
+}
+
+.btn{
+	float: right;
+}
