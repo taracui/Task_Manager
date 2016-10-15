@@ -7,8 +7,15 @@ th {
 }
 
 #textbox {
-	
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: italic;
 	float: left;
+}
+
+.addContainer{
+	padding-left: 320px;
+	padding-right: 320px;
 }
 
 #addTask {
@@ -16,17 +23,32 @@ th {
 }
 
 #taskContainer{
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 200px;
+	padding-right: 200px;
 }
 
-#myTable{
-	padding-left: 10px;
-	padding-right: 10px;
+#myButton{
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: medium;
+}
+
+#allButton{
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: medium;
+}
+
+.taskText{
+	font-family: 'Indie Flower', cursive;
+	font-size: 16px;
+	display:inline;
 }
 
 #removeTask{
 	float: right;
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
 }
 
 .strikethrough:checked + span{
@@ -34,6 +56,20 @@ th {
 	color: green;
 }
 
-.btn{
+.buttonDelete{
 	float: right;
+	display: none;
+}
+
+.taskContents:hover .buttonDelete {
+	display: inline;
+}
+
+#checkbox{
+	float:left;
+	display:none;
+}
+
+.checkbox:hover #checkbox{
+	display:inline;
 }

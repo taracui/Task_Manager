@@ -8,14 +8,21 @@
      <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel= "stylesheet" href = "style.css">
+    
+    <style> 
+    @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+    </style>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans|Raleway:400,500');
+    </style>
   </head>
     
   <body> 
-      <div class="container">
+      <div class="addContainer">
         <div class="input-group">
             <input type="text" id="textbox" class="form-control" placeholder="Enter new task here...">
             <span class="input-group-btn">
-              <button id="addTask" class="btn btn-primary">Add</button>
+              <button id="addTask" class="btn btn-primary">+</button>
             </span>
         </div>
       </div> 
@@ -25,17 +32,12 @@
       <div class="container" id="taskContainer">
         <div class="btn-group btn-group-justified" role="group" aria-label="...">
           <div class="btn-group" role="group">
-            <button type="button" id="dayButton" class="btn btn-default active">DAY
+            <button type="button" id="myButton" class="btn btn-default active">My Tasks
             </button>
           </div>
 
           <div class="btn-group" role="group">
-            <button type="button" id="weekButton" class="btn btn-default">WEEK
-            </button>
-          </div>
-  
-          <div class="btn-group" role="group">
-            <button type="button" id="monthButton" class="btn btn-default">MONTH
+            <button type="button" id="allButton" class="btn btn-default">All
             </button>
           </div>
         </div>
@@ -44,65 +46,87 @@
             <tbody id="tableBody">
               <tr>
                 <td>
-                  <div class="checkbox">
-                    <label>
-                    <input type="checkbox" id="checkbox" class="strikethrough">
+                  <div class="taskRow">
+                    <div class="taskContents">
+                      <div class="checkbox">
+                      <label><input type="checkbox" id="checkbox" class="strikethrough">
                       <span class="task">
                         <div class="taskText">
                         Drop Junior off at school
                         </div>
                       </span>
-                    </label>
-                    <button id="removeTask" class="btn btn-danger">Delete
-                    </button>
-                  </div>              
-                </td> 
+                      </label>
+                      <div class="buttonDelete">
+                      <button id="removeTask" type="button" class="btn btn-danger btn-outline btn-sm">Delete
+                      </button>
+                      </div>
+                      </div>
+                    </div>
+                  </div> 
+                </td>
               </tr>
 
               <tr>
                 <td>
-                  <div class="checkbox">
-                    <label><input type="checkbox" id="checkbox" class="strikethrough"/>
+                  <div class="taskRow">
+                    <div class="taskContents">
+                      <div class="checkbox">
+                      <label><input type="checkbox" id="checkbox" class="strikethrough">
                       <span class="task">
                         <div class="taskText">
                         Go grocery shopping
                         </div>
                       </span>
-                    </label>
-                    <button id="removeTask" class="btn btn-danger">Delete
-                    </button>
+                      </label>
+                      <div class="buttonDelete">
+                      <button id="removeTask" type="button" class="btn btn-danger btn-outline btn-sm">Delete
+                      </button>
+                      </div>
+                      </div>
+                    </div>
                   </div> 
                 </td>
               </tr>
 
               <tr>
                 <td>
-                  <div class="checkbox">
-                    <label><input type="checkbox" id="checkbox" class="strikethrough">
+                  <div class="taskRow">
+                    <div class="taskContents">
+                      <div class="checkbox">
+                      <label><input type="checkbox" id="checkbox" class="strikethrough">
                       <span class="task">
                         <div class="taskText">
                         Pay utility bill
-                      </div>
+                        </div>
                       </span>
-                    </label>
-                    <button id="removeTask" class="btn btn-danger">Delete
-                    </button>
+                      </label>
+                      <div class="buttonDelete">
+                      <button id="removeTask" type="button" class="btn btn-danger btn-outline btn-sm">Delete
+                      </button>
+                      </div>
+                      </div>
+                    </div>
                   </div> 
                 </td>
               </tr>
 
               <tr>
                 <td>
-                  <div class="checkbox">
-                    <label><input type="checkbox" id="checkbox" class="strikethrough">
+                  <div class="taskRow">
+                    <div class="taskContents">
+                      <div class="checkbox">
+                      <label><input type="checkbox" id="checkbox" class="strikethrough">
                       <span class="task">
                         <div class="taskText" id ="lastTask">
                         Pick up Junior from school
                         </div>
                       </span>
-                    </label>
-                    <button id="removeTask" class="btn btn-danger">Delete
-                    </button>
+                      </label>
+                      <div class="buttonDelete">
+                      <button id="removeTask" type="button" class="btn btn-danger btn-outline btn-sm">Delete
+                      </button>
+                    </div>
+                    </div>
                   </div> 
                 </td>
               </tr> 
