@@ -6,6 +6,15 @@ th {
 	text-align: left;
 }
 
+#goodJob{
+	height: 100px;
+	width: 100px;
+	display: none;
+	position: absolute;
+	top: 100px;
+	left: 600px;
+}
+
 #textbox {
 	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
@@ -13,9 +22,9 @@ th {
 	float: left;
 }
 
-.addContainer{
-	padding-left: 320px;
-	padding-right: 320px;
+#addContainer{
+	padding-left: 200px;
+	padding-right: 200px;
 }
 
 #addTask {

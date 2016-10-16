@@ -20,13 +20,18 @@
     });
 
 
-//this function deletes the table row when the delete button is clicked starting with the current element
+//this function fades out and deletes the table row when the delete button is clicked 
     $("#myTable").on("click", "#removeTask", function(){
         $(this).closest('tr').fadeOut("slow", function(){
             $(this).closest('tr').remove();
 
         });
     });
+
+//this function shows an image when checkbox is clicked 
+    $('#checkbox').on("click", function(){
+        $("#goodJob").show();
+    })
 
 //this is a function that strikes through text when the checkbox is clicked, and unstrikes when unclicked
     $("#checkbox").change(function(){
