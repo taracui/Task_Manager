@@ -19,9 +19,13 @@
         $("#myTable tr:last .taskText").replaceWith('<div class = "taskText">'+currentText+'</div>');
     });
 
+
 //this function deletes the table row when the delete button is clicked starting with the current element
     $("#myTable").on("click", "#removeTask", function(){
-        $(this).closest('tr').remove();
+        $(this).closest('tr').fadeOut("slow", function(){
+            $(this).closest('tr').remove();
+
+        });
     });
 
 //this is a function that strikes through text when the checkbox is clicked, and unstrikes when unclicked
